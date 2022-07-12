@@ -209,18 +209,22 @@
 
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
-            <div class="footer1">
+            <div class="footer-add">
                 <a href="./index.html" class="logo-font">Web<span class="logo-footer-color">Studio</span></a>
                 <address class="address">
                     <p>г. Киев, пр-т Леси Украинки, 26</p>
     
                     <ul>
-                        <li><a href="mailto:info@devstudio.com" class="footer-contacts">info@devstudio.com</a></li>
-                        <li><a href="tel:+380961111111" class="footer-contacts">+38 096 111 11 11</a></li>
+                        <li>
+                            <a href="mailto:info@devstudio.com" class="footer-contacts">info@devstudio.com</a>
+                        </li>
+                        <li>
+                            <a href="tel:+380961111111" class="footer-contacts">+38 096 111 11 11</a>
+                        </li>
                     </ul>
-    
                 </address>
             </div>
     
@@ -228,21 +232,21 @@
                 <p class="joinus">ПРИСОЕДИНЯЙТЕСЬ</p>
                 <ul class="joinus-social">
                     <li>
-                        <a href="" class="social-link">
+                        <a href="" class="social-link" aria-label="Instagram">
                             <svg class="icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a href="" class="social-link">
+                        <a href="" class="social-link" aria-label="Twitter">
                             <svg class="icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a href="" class="social-link">
+                        <a href="" class="social-link" aria-label="Facebook">
                             <svg class="icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
@@ -250,14 +254,27 @@
                     </li>
                     <li>
                         <a href="" class="social-link">
-                            <svg class="icon" width="20" height="20">
+                            <svg class="icon" width="20" height="20" aria-label="LinkedIn">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
                     </li>
-    
                 </ul>
             </div>
+    
+            <form class="footer-signus">
+                <p class="joinus">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+    
+                <div class="signus">
+                    <input type="email" name="sign-email" placeholder="E-mail" />
+                    <button type="submit" class="button button-signus">
+                        Подписаться
+                        <svg class="icon">
+                            <use href="./images/icons.svg#icon-subscribe"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
         </div>
     </footer>
     

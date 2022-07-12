@@ -13,8 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />  
-    
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
@@ -129,15 +128,27 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <div class="whatwedo-images">
             <div class="whatwedo-thumb">
-              <img src="./images/what1.jpg" alt="Чем мы занимаемся" width="370" />
+              <img
+                src="./images/what1.jpg"
+                alt="Чем мы занимаемся"
+                width="370"
+              />
               <p class="whatwedo-label">Десктопные приложения</p>
             </div>
             <div class="whatwedo-thumb">
-              <img src="./images/what2.jpg" alt="Чем мы занимаемся" width="370" />
+              <img
+                src="./images/what2.jpg"
+                alt="Чем мы занимаемся"
+                width="370"
+              />
               <p class="whatwedo-label">Мобильные приложения</p>
             </div>
             <div class="whatwedo-thumb">
-              <img src="./images/what3.jpg" alt="Чем мы занимаемся" width="370" />
+              <img
+                src="./images/what3.jpg"
+                alt="Чем мы занимаемся"
+                width="370"
+              />
               <p class="whatwedo-label">Дизайнерские решения</p>
             </div>
           </div>
@@ -150,7 +161,11 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="people">
             <li class="person">
-              <img src="./images/com_demyanenko.jpg" alt="Игорь Демьяненко" width="270"/>
+              <img
+                src="./images/com_demyanenko.jpg"
+                alt="Игорь Демьяненко"
+                width="270"
+              />
               <div class="person-descr">
                 <h4 class="font-name">Игорь Демьяненко</h4>
                 <p class="font-job">Product Designer</p>
@@ -187,7 +202,11 @@
               </div>
             </li>
             <li class="person">
-              <img src="./images/com_repina.jpg" alt="Ольга Репина" width="270"/>
+              <img
+                src="./images/com_repina.jpg"
+                alt="Ольга Репина"
+                width="270"
+              />
               <div class="person-descr">
                 <h4 class="font-name">Ольга Репина</h4>
                 <p class="font-job">Frontend Developer</p>
@@ -224,7 +243,11 @@
               </div>
             </li>
             <li class="person">
-              <img src="./images/com_tarasov.jpg" alt="Николай Тарасов" width="270"/>
+              <img
+                src="./images/com_tarasov.jpg"
+                alt="Николай Тарасов"
+                width="270"
+              />
               <div class="person-descr">
                 <h4 class="font-name">Николай Тарасов</h4>
                 <p class="font-job">Marketing</p>
@@ -261,7 +284,11 @@
               </div>
             </li>
             <li class="person">
-              <img src="./images/com_ermakov.jpg" alt="Михаил Ермаков" width="270"/>
+              <img
+                src="./images/com_ermakov.jpg"
+                alt="Михаил Ермаков"
+                width="270"
+              />
               <div class="person-descr">
                 <h4 class="font-name">Михаил Ермаков</h4>
                 <p class="font-job">UI Designer</p>
@@ -355,32 +382,95 @@
 
     <!-- Модальное окно - Заказать услугу -->
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal-order ">
+      <div class="modal-form">
         <button type="button" class="button-close" data-modal-close>
           <svg class="icon">
             <use href="./images/icons.svg#icon-modal-close"></use>
-          </svg>  
+          </svg>
         </button>
-                
+
+        <form class="form-order">
+          <h3 class="form-title">Оставьте свои данные, мы вам перезвоним</h3>
+          <ul class="form-fields">
+            <li class="form-field">
+              <label
+                >Имя
+                <input type="text" name="name" class="form-input" />
+                <svg class="icon">
+                  <use href="./images/icons.svg#icon-modal-person"></use>
+                </svg>
+              </label>
+            </li>
+
+            <li class="form-field">
+              <label
+                >Телефон
+                <input type="tel" name="phone" class="form-input" />
+                <svg class="icon">
+                  <use href="./images/icons.svg#icon-modal-phone"></use>
+                </svg>
+              </label>
+            </li>
+
+            <li class="form-field">
+              <label
+                >Почта
+                <input type="email" name="email" class="form-input" />
+                <svg class="icon">
+                  <use href="./images/icons.svg#icon-modal-email"></use>
+                </svg>
+              </label>
+            </li>
+
+            <li class="form-field">
+              <label
+                >Комментарий
+                <textarea
+                  name="comment"
+                  rows="5"
+                  placeholder="Введите текст"
+                ></textarea>
+              </label>
+            </li>
+
+            <div class="policy-agree">
+              <label>
+                <input
+                  type="checkbox"
+                  name="policy-agree"
+                  class="policy-checkbox hidden-item"
+                />
+                <span class="policy-checkbox-my"></span>Соглашаюсь с рассылкой и принимаю
+                <a href="">Условия договора</a>
+              </label>
+            </div>
+          </ul>
+
+          <button type="submit" class="button button-order">Отправить</button>
+        </form>
       </div>
     </div>
 
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="container">
         <div class="footer-add">
           <a href="./index.html" class="logo-font"
-            >Web<span class="logo-footer-color">Studio</span></a>
+            >Web<span class="logo-footer-color">Studio</span></a
+          >
           <address class="address">
             <p>г. Киев, пр-т Леси Украинки, 26</p>
 
             <ul>
               <li>
                 <a href="mailto:info@devstudio.com" class="footer-contacts"
-                  >info@devstudio.com</a>
+                  >info@devstudio.com</a
+                >
               </li>
               <li>
                 <a href="tel:+380961111111" class="footer-contacts"
-                  >+38 096 111 11 11</a>
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -419,6 +509,20 @@
             </li>
           </ul>
         </div>
+
+        <form class="footer-signus">
+          <p class="joinus">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+
+          <div class="signus">
+            <input type="email" name="sign-email" placeholder="E-mail" />
+            <button type="submit" class="button button-signus">
+              Подписаться
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
 
