@@ -391,63 +391,60 @@
 
         <form class="form-order">
           <h3 class="form-title">Оставьте свои данные, мы вам перезвоним</h3>
-          
-          <ul>
-            <li class="form-field">
-              <label
-                >Имя
-                <input type="text" name="name" class="form-input" />
-                <svg class="icon">
-                  <use href="./images/icons.svg#icon-modal-person"></use>
-                </svg>
-              </label>
-            </li>
+                    
+          <div class="form-field form-field-first">
+            <label
+              >Имя
+              <input type="text" name="name" class="form-input" />
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-modal-person"></use>
+              </svg>
+            </label>
+          </div>
 
-            <li class="form-field">
-              <label
-                >Телефон
-                <input type="tel" name="phone" class="form-input" />
-                <svg class="icon">
-                  <use href="./images/icons.svg#icon-modal-phone"></use>
-                </svg>
-              </label>
-            </li>
+          <div class="form-field">
+            <label
+              >Телефон
+              <input type="tel" name="phone" class="form-input" />
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-modal-phone"></use>
+              </svg>
+            </label>
+          </div>
 
-            <li class="form-field">
-              <label
-                >Почта
-                <input type="email" name="email" class="form-input" />
-                <svg class="icon">
-                  <use href="./images/icons.svg#icon-modal-email"></use>
-                </svg>
-              </label>
-            </li>
+          <div class="form-field">
+            <label
+              >Почта
+              <input type="email" name="email" class="form-input" />
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-modal-email"></use>
+              </svg>
+            </label>
+          </div>
 
-            <li class="form-field">
-              <label
-                >Комментарий
-                <textarea
-                  name="comment"
-                  rows="5"
-                  placeholder="Введите текст"
-                ></textarea>
-                
-              </label>
+          <div class="form-field">
+            <label
+              >Комментарий
+              <textarea
+                name="comment"
+                rows="5"
+                placeholder="Введите текст"
+              ></textarea>                
+            </label>
 
-            </li>
+          </div>
 
-            <li class="policy-agree">
-              <label>
-                <input
-                  type="checkbox"
-                  name="policy-agree"
-                  class="policy-checkbox hidden-item"
-                />
-                <span class="policy-checkbox-my"></span>Соглашаюсь с рассылкой и принимаю
-                <a href="">Условия договора</a>
-              </label>
-            </li>
-          </ul>
+          <div class="policy-agree">
+            <label>
+              <input
+                type="checkbox"
+                name="policy-agree"
+                class="policy-checkbox hidden-item"
+              />
+              <span class="policy-checkbox-my"></span>Соглашаюсь с рассылкой и принимаю
+              <a href="">Условия договора</a>
+            </label>
+          </div>          
 
           <button type="submit" class="button button-order">Отправить</button>
         </form>

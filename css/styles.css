@@ -304,7 +304,7 @@ ul {
   margin-top: 10px;
 }
 
-.form-field:first-child {
+.form-field-first {
   margin-top: 12px;
 }
 
@@ -346,6 +346,7 @@ ul {
 }
 
 .form-order textarea {
+  display: block;
   width: 100%;
   height: 120px;
   margin-top: 4px;
@@ -390,6 +391,10 @@ ul {
   margin-left: 5px;
 }
 
+.policy-agree a:focus-visible {
+  outline-color: #2196f3;
+}
+
 .policy-checkbox-my {
   display: inline-block;
   width: 16px;
@@ -399,15 +404,13 @@ ul {
   border-radius: 2px;
 }
 
-.policy-checkbox-my:hover,
-.policy-checkbox-my:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+.policy-checkbox:focus-visible + .policy-checkbox-my {
+  box-shadow: 0 0 0 2px var(--blue-color);
 }
 
 .policy-checkbox:checked + .policy-checkbox-my {
-  border: var(--blue-color);
+  border: 0;
   background-color: var(--blue-color);
-
   background-image: url("data:image/svg+xml,%3Csvg width='16' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='15' rx='2' fill='none'/%3E%3Cpath d='m3.957 7.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z' fill='%23fff' stroke='%23fff' stroke-width='.2'/%3E%3C/svg%3E");
 }
 
